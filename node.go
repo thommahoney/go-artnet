@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jsimonetti/go-artnet/packet"
-	"github.com/jsimonetti/go-artnet/packet/code"
+	"github.com/thommahoney/go-artnet/packet"
+	"github.com/thommahoney/go-artnet/packet/code"
 )
 
 // NodeCallbackFn gets called when a new packet has been received and needs to be processed
@@ -126,7 +126,7 @@ func (n *Node) Start() error {
 	n.shutdownCh = make(chan struct{})
 	n.shutdown = false
 
-	c, err := net.ListenPacket("udp4", n.listenAddr.String())
+	c, err := net.ListenPacket("udp6", n.listenAddr.String())
 	if err != nil {
 		n.shutdownErr = fmt.Errorf("error net.ListenPacket: %s", err)
 		n.log.With(Fields{"error": err}).Error("error net.ListenPacket")

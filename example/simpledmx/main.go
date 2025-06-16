@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/jsimonetti/go-artnet/packet"
+	"github.com/thommahoney/go-artnet/packet"
 )
 
 func main() {

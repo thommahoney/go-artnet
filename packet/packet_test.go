@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jsimonetti/go-artnet/packet/code"
-	"github.com/jsimonetti/go-artnet/version"
+	"github.com/thommahoney/go-artnet/packet/code"
+	"github.com/thommahoney/go-artnet/version"
 )
 
 func TestUnmarshal(t *testing.T) {

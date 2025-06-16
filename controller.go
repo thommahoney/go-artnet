@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jsimonetti/go-artnet/packet"
-	"github.com/jsimonetti/go-artnet/packet/code"
+	"github.com/thommahoney/go-artnet/packet"
+	"github.com/thommahoney/go-artnet/packet/code"
 )
 
 var defaultBroadcastAddr = net.UDPAddr{

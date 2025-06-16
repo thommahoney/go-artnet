@@ -3,7 +3,7 @@ package artnet
 import (
 	"net"
 
-	"github.com/jsimonetti/go-artnet/packet"
+	"github.com/thommahoney/go-artnet/packet"
 )
 
 // Option is a functional option handler for Controller.
